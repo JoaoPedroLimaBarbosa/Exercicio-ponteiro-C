@@ -1,0 +1,14 @@
+# Exercício Ponteiro C
+
+Este repositório contém a resolução da lista de exercícios sobre **ponteiros em C**.
+
+## O que são ponteiros?
+
+Em C, um ponteiro é uma variável que armazena **o endereço de memória** de outra variável.  
+Eles permitem manipular valores diretamente na memória, acessar arrays e criar estruturas mais complexas.
+
+Exemplo:
+```c
+int x = 10;
+int *p = &x; // p guarda o endereço de x
+*p = *p + 5; // altera o valor de x usando o ponteiro 
