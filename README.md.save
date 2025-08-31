@@ -1,14 +1,33 @@
-# Exercício Ponteiro C
+# Lista de Exercícios – Ponteiros em C
 
-Este repositório contém a resolução da lista de exercícios sobre **ponteiros em C**.
+## Descrição
 
-## O que são ponteiros?
+Este repositório contém a resolução de uma lista de exercícios de **ponteiros em C**, desenvolvida como atividade da disciplina de Estrutura de Dados. O objetivo é praticar o uso de ponteiros para acessar e manipular variáveis, vetores e matrizes.
 
-Em C, um ponteiro é uma variável que armazena **o endereço de memória** de outra variável.  
-Eles permitem manipular valores diretamente na memória, acessar arrays e criar estruturas mais complexas.
+---
 
-Exemplo:
+## O que são ponteiros em C
+
+Um **ponteiro** é uma variável que armazena o **endereço de memória** de outra variável. Em C, eles são muito importantes para:
+
+- Acessar e alterar valores de variáveis de forma indireta.
+- Manipular arrays e matrizes de maneira eficiente.
+- Trabalhar com funções que precisam alterar variáveis fora do seu escopo local.
+
+Exemplo básico:
+
 ```c
 int x = 10;
-int *p = &x; // p guarda o endereço de x
-*p = *p + 5; // altera o valor de x usando o ponteiro 
+int *p = &x;       // p aponta para o endereço de x
+*p = *p + 5;       // altera o valor de x via ponteiro
+printf("%d\n", x); // imprime 15
+```
+
+Exercícios realizados
+Cofrinho de João: Declaração de variável inteira e acesso via ponteiro para mostrar valor e endereço.
+Idade do aluno: Entrada do usuário, armazenamento e impressão usando ponteiro.
+Preços de produtos: Leitura de vetor e cálculo de desconto de 10% usando ponteiros.
+Horas de trabalho: Vetor de tamanho n preenchido via ponteiro, somando total de horas.
+Notas dos alunos: Inversão da ordem de um vetor de notas usando ponteiros.
+Notas em matriz 3x3: Impressão e soma da diagonal principal usando apenas ponteiros.
+Partida de vôlei 4x4: Manipulação de matriz, contagem de pares/ímpares, cálculo de totais, médias e jogador mais regular, utilizando ponteiros.
